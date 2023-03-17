@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 20px;
+
+}
+nav ul {
+    display: flex;
+    margin-left: 72%;
+    margin-top: 8px;
+}
+
+nav ul li {
+    text-align: right;
+    margin-left: 20px;
+    color: white;
+}
+
+nav ul li button {
+    background-color: rgb(56, 5, 197);
+    color: white;
+    height: 27px;
+    width: 55px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    margin-left: 0%;
+    margin-top: 40px;
+    justify-content: center;
+    color: white;
+}
+
+
+.left img {
+
+    width: 20px;
+    height: 20px;
+}
+
+.right img {
+    height: 300px;
+    width: 400px;
+    margin-left: 30px;
+}
+
+.project {
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    color: blue;
+}
+
+a span {
+    color: white;
+    font-size: 25px;
+    font-weight: 500
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,230px);
+    align-items: center;
+    justify-content: center;
+}
+
+.container div img {
+    height: 200px;
+    width: 200px;
+    /* justify-self: center; */
+
+}
+
+.container div {
+    text-align: center;
+    color: white;
+}
+
+.contact {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social {
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+}
+
+@media  screen and (max-width: 468px) {
+    nav ul li{
+        display: none;
+    }
+
+    main {
+        display: block;
+        text-align: center;
+    }
+
+    .left {
+        justify-content: center;
+    }
+
+    .right img {
+        margin-top: 20px;
+    }
+    
+    .container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div img {
+    height: 200px;
+    width: 200px;
+    justify-self: center;
+
+}
+
+.container div {
+    display: block;
+    justify-content: center;
+    
+}
+
+    
+}
+
+@media screen and (min-width: 469px) {
+    .sidebar {
+        display: none;
+    }
+}
